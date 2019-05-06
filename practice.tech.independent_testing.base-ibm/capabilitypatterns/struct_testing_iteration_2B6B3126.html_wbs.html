@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Capability Pattern: Test Iteration [Template]</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="struct_testing_iteration">
+<meta name="uma.presentationName" content="Test Iteration [Template]">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_zAR1YYcrEdyuU5Sm8sc1Cw&path=_zAR1YYcrEdyuU5Sm8sc1Cw';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_zAR1YYcrEdyuU5Sm8sc1Cw"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Capability Pattern: Test Iteration [Template]</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This capability pattern covers the super-set of activities and workflows for a typical Test iteration. It should be specialized per testing level or type, and customized to fit the lifecycle context.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td width="10" class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/struct_testing_iteration_2B6B3126.html_desc.html">Description</a></td><td width="21"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Work Breakdown Structure</span></td><td width="1"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_TBS" href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/struct_testing_iteration_2B6B3126.html_tbs.html"><span style="white-space:nowrap;">Team Allocation</span></a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/struct_testing_iteration_2B6B3126.html_wpbs.html"><span style="white-space:nowrap;">Work Product Usage</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="2"><img src="./../../images/shim.gif" height="2" alt="" title=""></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="5"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Workflow</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="sectionTableSingleCell" colspan="2" align="left">
+<p></p>
+<img border="0" diagramType="Activity" id="diagram_Activity" src="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/resources/struct_testing_iteration_2B6B3126_Activity.jpeg" alt="Activity diagram: Test Iteration [Template]" title="Activity diagram: Test Iteration [Template]" usemap="#Activity_struct_testing_iteration"><map name="Activity_struct_testing_iteration">
+<area href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/plan_test_D6EF6154.html" relpath=",_eowtMYcsEdyuU5Sm8sc1Cw" alt="Define Test Approach" title="Define Test Approach" coords="162, 120, 271, 191" shape="rect" guid="_eowtMYcsEdyuU5Sm8sc1Cw"></area>
+<area href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/ver_test_B1709442.html" relpath=",_mPuekYcsEdyuU5Sm8sc1Cw" alt="Verify Test Approach" title="Verify Test Approach" coords="38, 300, 181, 353" shape="rect" guid="_mPuekYcsEdyuU5Sm8sc1Cw"></area>
+<area href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/impr_test_B6690F52.html" relpath=",_nBy0sYcsEdyuU5Sm8sc1Cw" alt="Improve Test Assets" title="Improve Test Assets" coords="348, 408, 486, 461" shape="rect" guid="_nBy0sYcsEdyuU5Sm8sc1Cw"></area>
+<area href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/gather_analyze_data_1DD9889A.html" relpath=",_RCeUMZ7GEdyiZ7HzleslTA" alt="Gather and Analyze Data" title="Gather and Analyze Data" coords="223, 288, 395, 341" shape="rect" guid="_RCeUMZ7GEdyiZ7HzleslTA"></area>
+<area href="./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/test_and_evaluate_23ABE3B8.html" relpath=",_M-MXsJ7MEdyXcuIY0bYzYg" alt="Test and Evaluate" title="Test and Evaluate" coords="144, 360, 235, 431" shape="rect" guid="_M-MXsJ7MEdyXcuIY0bYzYg"></area>
+</map>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Work Breakdown</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Work Breakdown", summary: "Work Breakdown", 
+columns: [
+["presentation_name", "Breakdown Element"],
+["steps", "Steps"],
+["id", "Index"],
+["predecessors", "Predecessors"],
+["model_info", "Model Info"],
+["type", "Type"],
+["is_planned", "Planned"],
+["is_repeatable", "Repeatable"],
+["has_multiple_occurrences", "Multiple Occurrences"],
+["is_ongoing", "Ongoing"],
+["is_event_driven", "Event Driven"],
+["is_optional", "Optional"],
+["teams", "Team"]],
+rows: [
+		
+{id: "d360dac1", parentId: "", relPath: ",_eowtMYcsEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "1", prefix: "", name: "plan_test", title: "Define Test Approach", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/plan_test_D6EF6154.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "789cd655", parentId: "d360dac1", relPath: ",_eowtMYcsEdyuU5Sm8sc1Cw,__qQGQIcuEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "2", prefix: "", name: "define_test_approach", title: "Define Test Strategy", url: "./../../practice.tech.independent_testing.base-ibm/tasks/define_test_approach_60A35452.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "6c91b7a3", parentId: "d360dac1", relPath: ",_eowtMYcsEdyuU5Sm8sc1Cw,_AVxIcIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "3", prefix: "", name: "identify_targets_test", title: "Identify Targets of Test", url: "./../../practice.tech.independent_testing.base-ibm/tasks/identify_targets_test_4C52E66F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "195717e9", parentId: "d360dac1", relPath: ",_eowtMYcsEdyuU5Sm8sc1Cw,_BC6iUIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "4", prefix: "", name: "structure_test_env_configuration", title: "Structure Test Environment Configuration", url: "./../../practice.tech.independent_testing.base-ibm/tasks/structure_test_env_configuration_431EBC72.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "71138b52", parentId: "d360dac1", relPath: ",_eowtMYcsEdyuU5Sm8sc1Cw,_B8bkQIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "5", prefix: "", name: "identify_test_ideas", title: "Identify Test Ideas", url: "./../../practice.tech.independent_testing.base-ibm/tasks/identify_test_ideas_D97DA26C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "c7b71903", parentId: "", relPath: ",_mPuekYcsEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "6", prefix: "", name: "ver_test", title: "Verify Test Approach", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/ver_test_B1709442.html", 
+	predecessors: "1", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "1cbbca88", parentId: "c7b71903", relPath: ",_mPuekYcsEdyuU5Sm8sc1Cw,_-OCxgIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "7", prefix: "", name: "identify_testability_mechanisms", title: "Identify Testability Mechanisms", url: "./../../practice.tech.independent_testing.base-ibm/tasks/identify_testability_mechanisms_9F8510DF.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "71db285a", parentId: "c7b71903", relPath: ",_mPuekYcsEdyuU5Sm8sc1Cw,__FCD4IcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "8", prefix: "", name: "define_testability_elements", title: "Define Testability Elements", url: "./../../practice.tech.independent_testing.base-ibm/tasks/define_testability_elements_ED2AC642.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "21e53f8e", parentId: "c7b71903", relPath: ",_mPuekYcsEdyuU5Sm8sc1Cw,__qSGAIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "9", prefix: "", name: "structure_test_env_configuration", title: "Structure Test Environment Configuration", url: "./../../practice.tech.independent_testing.base-ibm/tasks/structure_test_env_configuration_431EBC72.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "7a7b9507", parentId: "c7b71903", relPath: ",_mPuekYcsEdyuU5Sm8sc1Cw,_AV8SIIcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "10", prefix: "", name: "create_test_cases", title: "Develop Test Cases", url: "./../../practice.tech.independent_testing.base-ibm/tasks/create_test_cases_765DDFED.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "c925d7ba", parentId: "c7b71903", relPath: ",_mPuekYcsEdyuU5Sm8sc1Cw,_BDPdAIcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "11", prefix: "", name: "implement_test", title: "Develop Test", url: "./../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "1f5e3624", parentId: "", relPath: ",_nBy0sYcsEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "12", prefix: "", name: "impr_test", title: "Improve Test Assets", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/impr_test_B6690F52.html", 
+	predecessors: "1", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "7abd7617", parentId: "1f5e3624", relPath: ",_nBy0sYcsEdyuU5Sm8sc1Cw,_DMCVgIcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "13", prefix: "", name: "define_test_approach", title: "Define Test Strategy", url: "./../../practice.tech.independent_testing.base-ibm/tasks/define_test_approach_60A35452.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "7d13354f", parentId: "1f5e3624", relPath: ",_nBy0sYcsEdyuU5Sm8sc1Cw,_D8Ui8IcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "14", prefix: "", name: "define_testability_elements", title: "Define Testability Elements", url: "./../../practice.tech.independent_testing.base-ibm/tasks/define_testability_elements_ED2AC642.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "6f58db23", parentId: "1f5e3624", relPath: ",_nBy0sYcsEdyuU5Sm8sc1Cw,_FGFAUIcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "15", prefix: "", name: "structure_test_implementation", title: "Structure the Test Implementation", url: "./../../practice.tech.independent_testing.base-ibm/tasks/structure_test_implementation_C85B05B7.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "20793a4a", parentId: "1f5e3624", relPath: ",_nBy0sYcsEdyuU5Sm8sc1Cw,_FxmCgIcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "16", prefix: "", name: "identify_test_ideas", title: "Identify Test Ideas", url: "./../../practice.tech.independent_testing.base-ibm/tasks/identify_test_ideas_D97DA26C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "21e1eab4", parentId: "1f5e3624", relPath: ",_nBy0sYcsEdyuU5Sm8sc1Cw,_Gaa9EIcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "17", prefix: "", name: "create_test_cases", title: "Develop Test Cases", url: "./../../practice.tech.independent_testing.base-ibm/tasks/create_test_cases_765DDFED.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "1da8368f", parentId: "1f5e3624", relPath: ",_nBy0sYcsEdyuU5Sm8sc1Cw,_HNrmAIcwEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "18", prefix: "", name: "implement_test", title: "Develop Test", url: "./../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "1966d189", parentId: "", relPath: ",_RCeUMZ7GEdyiZ7HzleslTA", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "19", prefix: "", name: "gather_analyze_data", title: "Gather and Analyze Data", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/gather_analyze_data_1DD9889A.html", 
+	predecessors: "1", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "c9177959", parentId: "1966d189", relPath: ",_RCeUMZ7GEdyiZ7HzleslTA,_c8V6oJ7FEdyiZ7HzleslTA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "20", prefix: "", name: "create_test_cases", title: "Develop Test Cases", url: "./../../practice.tech.independent_testing.base-ibm/tasks/create_test_cases_765DDFED.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "c754fbff", parentId: "1966d189", relPath: ",_RCeUMZ7GEdyiZ7HzleslTA,_dutLsJ7FEdyiZ7HzleslTA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "21", prefix: "", name: "implement_test", title: "Develop Test", url: "./../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "70795272", parentId: "1966d189", relPath: ",_RCeUMZ7GEdyiZ7HzleslTA,_YssqYJ7FEdyiZ7HzleslTA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "22", prefix: "", name: "run_tests", title: "Run Tests", url: "./../../practice.tech.independent_testing.base-ibm/tasks/run_tests_BBCA97B.html", 
+	predecessors: "21", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "19348f84", parentId: "1966d189", relPath: ",_RCeUMZ7GEdyiZ7HzleslTA,_aNZoIJ7FEdyiZ7HzleslTA", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "23", prefix: "", name: "determine test_results", title: "Determine Test Results", url: "./../../practice.tech.independent_testing.base-ibm/tasks/determine test_results_9A69FA0F.html", 
+	predecessors: "22", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "ce729ed5", parentId: "", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "24", prefix: "", name: "test_and_evaluate", title: "Test and Evaluate", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/test_and_evaluate_23ABE3B8.html", 
+	predecessors: "1", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "7bfc1910", parentId: "ce729ed5", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_F8tj4J7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "25", prefix: "", name: "design_test", title: "Design Test", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/design_test_AC9B63D2.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "d0ef0465", parentId: "7bfc1910", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_F8tj4J7KEdyXcuIY0bYzYg,_Gc6s4IcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "26", prefix: "", name: "define_test_approach", title: "Define Test Strategy", url: "./../../practice.tech.independent_testing.base-ibm/tasks/define_test_approach_60A35452.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "7a8bd908", parentId: "7bfc1910", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_F8tj4J7KEdyXcuIY0bYzYg,_HFwOgIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "27", prefix: "", name: "define_testability_elements", title: "Define Testability Elements", url: "./../../practice.tech.independent_testing.base-ibm/tasks/define_testability_elements_ED2AC642.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "7ed57e02", parentId: "7bfc1910", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_F8tj4J7KEdyXcuIY0bYzYg,_HsyZUIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "28", prefix: "", name: "identify_testability_mechanisms", title: "Identify Testability Mechanisms", url: "./../../practice.tech.independent_testing.base-ibm/tasks/identify_testability_mechanisms_9F8510DF.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "c1e55b6c", parentId: "7bfc1910", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_F8tj4J7KEdyXcuIY0bYzYg,_Icn60IcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "29", prefix: "", name: "identify_test_ideas", title: "Identify Test Ideas", url: "./../../practice.tech.independent_testing.base-ibm/tasks/identify_test_ideas_D97DA26C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "1affc4eb", parentId: "7bfc1910", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_F8tj4J7KEdyXcuIY0bYzYg,_JHigEIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "30", prefix: "", name: "create_test_cases", title: "Develop Test Cases", url: "./../../practice.tech.independent_testing.base-ibm/tasks/create_test_cases_765DDFED.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "c6654342", parentId: "ce729ed5", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_Hchw0Z7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "31", prefix: "", name: "dev_test", title: "Develop Test", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/dev_test_65BF57A8.html", 
+	predecessors: "25", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "d2ceb9ad", parentId: "c6654342", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_Hchw0Z7KEdyXcuIY0bYzYg,_kgEXcIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "32", prefix: "", name: "create_test_cases", title: "Refine Test Cases", url: "./../../practice.tech.independent_testing.base-ibm/tasks/create_test_cases_765DDFED.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true]},
+	
+		
+		
+{id: "c03de9d1", parentId: "c6654342", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_Hchw0Z7KEdyXcuIY0bYzYg,_NzWu8IcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "33", prefix: "", name: "implement_test", title: "Develop Test", url: "./../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "c1e08701", parentId: "c6654342", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_Hchw0Z7KEdyXcuIY0bYzYg,_PO11gIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "34", prefix: "", name: "structure_test_implementation", title: "Structure the Test Implementation", url: "./../../practice.tech.independent_testing.base-ibm/tasks/structure_test_implementation_C85B05B7.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "24a2477b", parentId: "ce729ed5", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_JylCMJ7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "35", prefix: "", name: "prep_test_run", title: "Prepare Test Run", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/prep_test_run_99C421B7.html", 
+	predecessors: "31", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "7308852a", parentId: "24a2477b", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_JylCMJ7KEdyXcuIY0bYzYg,_UYTpsIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "36", prefix: "", name: "structure_test_env_configuration", title: "Structure Test Environment Configuration", url: "./../../practice.tech.independent_testing.base-ibm/tasks/structure_test_env_configuration_431EBC72.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true]},
+	
+		
+		
+{id: "c70340de", parentId: "24a2477b", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_JylCMJ7KEdyXcuIY0bYzYg,_VFwlkIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "37", prefix: "", name: "run_tests", title: "Run Tests", url: "./../../practice.tech.independent_testing.base-ibm/tasks/run_tests_BBCA97B.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "c733dce3", parentId: "24a2477b", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_JylCMJ7KEdyXcuIY0bYzYg,_V5nEYIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "38", prefix: "", name: "analyze_test_failure", title: "Analyze Test Failure", url: "./../../practice.tech.independent_testing.base-ibm/tasks/analyze_test_failure_EBF42AED.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "d2954a3f", parentId: "ce729ed5", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_QLwx0Z7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "39", prefix: "", name: "run_eval_test", title: "Run Test", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/run_eval_test_5EDAC9FA.html", 
+	predecessors: "35", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "c4b03a8f", parentId: "d2954a3f", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_QLwx0Z7KEdyXcuIY0bYzYg,_1W6YwIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "40", prefix: "", name: "run_tests", title: "Run Tests", url: "./../../practice.tech.independent_testing.base-ibm/tasks/run_tests_BBCA97B.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "c667f6a8", parentId: "d2954a3f", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_QLwx0Z7KEdyXcuIY0bYzYg,_2htX8IcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "41", prefix: "", name: "analyze_test_failure", title: "Analyze Test Failure", url: "./../../practice.tech.independent_testing.base-ibm/tasks/analyze_test_failure_EBF42AED.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "c9031667", parentId: "d2954a3f", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_QLwx0Z7KEdyXcuIY0bYzYg,_4HCXAIcvEdyuU5Sm8sc1Cw", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "42", prefix: "", name: "determine test_results", title: "Determine Test Results", url: "./../../practice.tech.independent_testing.base-ibm/tasks/determine test_results_9A69FA0F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "77451c71", parentId: "ce729ed5", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_RXwq4Z7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 1, hasChildren:true, 
+	index: "43", prefix: "", name: "perform_exploratory_testing", title: "Perform Exploratory Testing", url: "./../../practice.tech.independent_testing.base-ibm/capabilitypatterns/perform_exploratory_testing_EF2AE2DA.html", 
+	predecessors: "", info: "", type: "Activity", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "true",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "extends",
+	steps: []},
+	
+		
+		
+{id: "7632360a", parentId: "77451c71", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_RXwq4Z7KEdyXcuIY0bYzYg,_XS2JQJ7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "44", prefix: "", name: "implement_test", title: "Develop Test", url: "./../../practice.tech.independent_testing.base-ibm/tasks/implement_test_4938541C.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "d0e05606", parentId: "77451c71", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_RXwq4Z7KEdyXcuIY0bYzYg,_X9dzkJ7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "45", prefix: "", name: "run_tests", title: "Run Tests", url: "./../../practice.tech.independent_testing.base-ibm/tasks/run_tests_BBCA97B.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true,true]},
+	
+		
+		
+{id: "ccdd78a6", parentId: "77451c71", relPath: ",_M-MXsJ7MEdyXcuIY0bYzYg,_RXwq4Z7KEdyXcuIY0bYzYg,_YsjHIJ7KEdyXcuIY0bYzYg", isSuppressed: "", indentSize: 2, hasChildren:false, 
+	index: "46", prefix: "", name: "determine test_results", title: "Determine Test Results", url: "./../../practice.tech.independent_testing.base-ibm/tasks/determine test_results_9A69FA0F.html", 
+	predecessors: "", info: "", type: "Task Descriptor", 
+	repeatable: "false", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "false", eventDriven: "false", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: "",
+	steps: [true,true,true,true,true,true,true,true,true]},
+	
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2014.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
